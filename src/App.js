@@ -2,13 +2,15 @@ import './App.css';
 import React from 'react';
 import Navbar from "./components/Navbar";
 import Topbar from "./components/Topbar";
-import Card_Team from "./components/Card_Team_Info";
+import Ourteam from "./components/OurTeam";
+
+
 function App() {
   return (
       <>
           <Topbar />
           <Navbar />
-          <Card_Team />
+          <Ourteam/>
       </>
       );
 }
