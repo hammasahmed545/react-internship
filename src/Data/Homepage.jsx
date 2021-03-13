@@ -4,7 +4,7 @@ import img2 from '../img/team-member-pic2.jpg'
 import img3 from '../img/team-member-pic4.jpg'
 import img4 from '../img/team-member-pic3.jpg'
 
-const Sdata = [
+const Sdata = [  
     {
         pic: img1,
         name: "Alec Thompson" ,
