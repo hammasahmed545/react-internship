@@ -9,9 +9,9 @@ const Section_Header = ({title1, title2, headingcontent}) => {
         <h2>{title1}<span>{title2}</span></h2>
           <div className="separator">
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li> </li>
+              <li> </li>
+              <li> </li>
             </ul>
           </div>
         <div className="heading_content"> {headingcontent}</div>
