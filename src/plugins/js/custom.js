@@ -1,9 +1,3 @@
-/**
- Company : Companyname
- File    : custom.js
- Version : 1.0
- **/
-
 (function ($) {
 
     /****---- Sticky Header Start ----****/
@@ -179,4 +173,3 @@
 
 
 })(window.jQuery);
-

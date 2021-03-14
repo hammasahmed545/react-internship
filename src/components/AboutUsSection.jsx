@@ -1,13 +1,13 @@
 import React from "react";
-import {Heading_data,About_data} from "../data/Homepage";
-import Section_Header from "./reusable/Section_Header";
+import {Heading_data,About_data} from "../data/Home_Data";
+import Sectionheader from "./reusable/Sectionheader";
 import Button_Common from "./reusable/Button_Common";
 
 const aboutus = () => {
     return(
     <div className="container">
 
-        <Section_Header title1={Heading_data[1].title1 } title2={Heading_data[1].title2} headingcontent={Heading_data[1].headingcontent}/>
+        <Sectionheader title1={Heading_data[1].title1 } title2={Heading_data[1].title2} headingcontent={Heading_data[1].headingcontent}/>
 
         <div className="col-lg-12 col-md-12 col-xs-12 content_sec">
 
