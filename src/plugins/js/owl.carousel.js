@@ -1362,7 +1362,7 @@
 			item = this.prepare(item);
 			this.$stage.append(item);
 			this._items.push(item);
-			this._mergers.push(item.find('[data-merge]').addBack('[data-merge]').attr('data-merge') * 1 || 1);
+			this._mergers.push(item.find('[Data-merge]').addBack('[Data-merge]').attr('Data-merge') * 1 || 1);
 		}, this));
 
 		this.reset(this.isNumeric(this.settings.startPosition) ? this.settings.startPosition : 0);
@@ -1391,11 +1391,11 @@
 			this._items.length === 0 && this.$stage.append(content);
 			this._items.length !== 0 && this._items[position - 1].after(content);
 			this._items.push(content);
-			this._mergers.push(content.find('[data-merge]').addBack('[data-merge]').attr('data-merge') * 1 || 1);
+			this._mergers.push(content.find('[Data-merge]').addBack('[Data-merge]').attr('Data-merge') * 1 || 1);
 		} else {
 			this._items[position].before(content);
 			this._items.splice(position, 0, content);
-			this._mergers.splice(position, 0, content.find('[data-merge]').addBack('[data-merge]').attr('data-merge') * 1 || 1);
+			this._mergers.splice(position, 0, content.find('[Data-merge]').addBack('[Data-merge]').attr('Data-merge') * 1 || 1);
 		}
 
 		this._items[current] && this.reset(this._items[current].index());
@@ -1443,7 +1443,7 @@
 				element.css('opacity', 1);
 				this.leave('pre-loading');
 				!this.is('pre-loading') && !this.is('initializing') && this.refresh();
-			}, this)).attr('src', element.attr('src') || element.attr('data-src') || element.attr('data-src-retina'));
+			}, this)).attr('src', element.attr('src') || element.attr('Data-src') || element.attr('Data-src-retina'));
 		}, this));
 	};
 
@@ -1543,7 +1543,7 @@
 	 * @todo Remove `status`, `relatedTarget` should be used instead.
 	 * @protected
 	 * @param {String} name - The event name.
-	 * @param {*} [data=null] - The event data.
+	 * @param {*} [data=null] - The event Data.
 	 * @param {String} [namespace=carousel] - The event namespace.
 	 * @param {String} [state] - The state which is associated with the event.
 	 * @param {Boolean} [enter=false] - Indicates if the call enters the specified state or not.
@@ -1968,7 +1968,7 @@
 
 		$elements.each($.proxy(function(index, element) {
 			var $element = $(element), image,
-                url = (window.devicePixelRatio > 1 && $element.attr('data-src-retina')) || $element.attr('data-src') || $element.attr('data-srcset');
+                url = (window.devicePixelRatio > 1 && $element.attr('Data-src-retina')) || $element.attr('Data-src') || $element.attr('Data-srcset');
 
 			this._core.trigger('load', { element: $element, url: url }, 'lazy');
 
@@ -2250,22 +2250,22 @@
 	/**
 	 * Gets the video ID and the type (YouTube/Vimeo/vzaar only).
 	 * @protected
-	 * @param {jQuery} target - The target containing the video data.
+	 * @param {jQuery} target - The target containing the video Data.
 	 * @param {jQuery} item - The item containing the video.
 	 */
 	Video.prototype.fetch = function(target, item) {
 			var type = (function() {
-					if (target.attr('data-vimeo-id')) {
+					if (target.attr('Data-vimeo-id')) {
 						return 'vimeo';
-					} else if (target.attr('data-vzaar-id')) {
+					} else if (target.attr('Data-vzaar-id')) {
 						return 'vzaar'
 					} else {
 						return 'youtube';
 					}
 				})(),
-				id = target.attr('data-vimeo-id') || target.attr('data-youtube-id') || target.attr('data-vzaar-id'),
-				width = target.attr('data-width') || this._core.settings.videoWidth,
-				height = target.attr('data-height') || this._core.settings.videoHeight,
+				id = target.attr('Data-vimeo-id') || target.attr('Data-youtube-id') || target.attr('Data-vzaar-id'),
+				width = target.attr('Data-width') || this._core.settings.videoWidth,
+				height = target.attr('Data-height') || this._core.settings.videoHeight,
 				url = target.attr('href');
 
 		if (url) {
@@ -2305,7 +2305,7 @@
 			height: height
 		};
 
-		item.attr('data-video', url);
+		item.attr('Data-video', url);
 
 		this.thumbnail(target, this._videos[url]);
 	};
@@ -2313,7 +2313,7 @@
 	/**
 	 * Creates video thumbnail.
 	 * @protected
-	 * @param {jQuery} target - The target containing the video data.
+	 * @param {jQuery} target - The target containing the video Data.
 	 * @param {Object} info - The video info object.
 	 * @see `fetch`
 	 */
@@ -2351,7 +2351,7 @@
 		}));
 
 		if (this._core.settings.lazyLoad) {
-			srcType = 'data-src';
+			srcType = 'Data-src';
 			lazyClass = 'owl-lazy';
 		}
 
@@ -2411,7 +2411,7 @@
 	Video.prototype.play = function(event) {
 		var target = $(event.target),
 			item = target.closest('.' + this._core.settings.itemClass),
-			video = this._videos[item.attr('data-video')],
+			video = this._videos[item.attr('Data-video')],
 			width = video.width || '100%',
 			height = video.height || this._core.$stage.height(),
 			html,
@@ -2910,7 +2910,7 @@
 			'prepared.owl.carousel': $.proxy(function(e) {
 				if (e.namespace && this._core.settings.dotsData) {
 					this._templates.push('<div class="' + this._core.settings.dotClass + '">' +
-						$(e.content).find('[data-dot]').addBack('[data-dot]').attr('data-dot') + '</div>');
+						$(e.content).find('[Data-dot]').addBack('[Data-dot]').attr('Data-dot') + '</div>');
 				}
 			}, this),
 			'added.owl.carousel': $.proxy(function(e) {
@@ -3150,7 +3150,7 @@
 	};
 
 	/**
-	 * Extends event data.
+	 * Extends event Data.
 	 * @protected
 	 * @param {Event} event - The event object which gets thrown.
 	 */
@@ -3289,7 +3289,7 @@
 			}, this),
 			'prepared.owl.carousel': $.proxy(function(e) {
 				if (e.namespace) {
-					var hash = $(e.content).find('[data-hash]').addBack('[data-hash]').attr('data-hash');
+					var hash = $(e.content).find('[Data-hash]').addBack('[Data-hash]').attr('Data-hash');
 
 					if (!hash) {
 						return;

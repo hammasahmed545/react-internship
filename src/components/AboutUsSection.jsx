@@ -1,5 +1,5 @@
 import React from "react";
-import {Heading_data,About_data} from "../data/Home_Data";
+import {Heading_data,About_data} from "../Data/Home_Data";
 import Sectionheader from "./reusable/Sectionheader";
 import Button_Common from "./reusable/Button_Common";
 

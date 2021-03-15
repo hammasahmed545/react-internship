@@ -132,7 +132,7 @@
     /****---- Counter End ----****/
 
 
-    /****---- Portfolio Start ----****/
+    /****---- portfolio Start ----****/
 
     $('#portfolio').imagesLoaded(function () {
         $('.portfolio-gallary').isotope({
@@ -147,7 +147,7 @@
             $('.portfolio-sort ul li').removeClass('active');
             $(this).addClass('active');
 
-            const selector = $(this).attr('data-filter');
+            const selector = $(this).attr('Data-filter');
             $('.portfolio-gallary').isotope({
                 filter: selector
             });
@@ -169,7 +169,7 @@
     });
 
 
-    /****---- Portfolio End ----****/
+    /****---- portfolio End ----****/
 
 
 })(window.jQuery);

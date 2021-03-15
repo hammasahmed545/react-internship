@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Testimonial_Section_Card = ({img, name, position, content }) => {
+const TestimonialCard = ({img, name, position, content }) => {
     return (
         <div className="item">
             <div className="comment-box">
@@ -21,4 +21,4 @@ const Testimonial_Section_Card = ({img, name, position, content }) => {
     );
 }
 
-export default Testimonial_Section_Card
+export default TestimonialCard

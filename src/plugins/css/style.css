@@ -23,7 +23,7 @@
         2.04. Counter
         2.05. Services
         2.06. Our Team
-        2.07. Portfolio
+        2.07. portfolio
         2.08. Clients
         2.09. Blog
         2.10. Testimonials
@@ -35,7 +35,7 @@
         03.4 Services
         03.5 Counter
         03.5 Our Team
-        03.6 Portfolio
+        03.6 portfolio
         03.7 Pricing
         03.8 Counter 2
         03.9 Blog Posts
@@ -49,7 +49,7 @@
         04.3 About Us
         04.4 Services
         04.5 Team
-        04.6 Portfolio
+        04.6 portfolio
         04.7 Counter
         04.8 Blog Posts
         04.9 Clients
@@ -62,7 +62,7 @@
      8. Services 1
      9. Services 2
      10. Services 3
-     11. Portfolio Detail
+     11. portfolio Detail
      12. Our Team
      13. Our Team 1 Detail
      14. Blog Posts
@@ -837,7 +837,7 @@
      cursor: pointer;
      transition: all 0.5s ease;
 }
-/*---- Portfolio ----*/
+/*---- portfolio ----*/
  section#portfolio {
      text-align: center;
      padding-bottom:85px;
@@ -1529,7 +1529,7 @@
  .index-2 .owl-nav button {
      display: none;
 }
-/*---- Portfolio ----*/
+/*---- portfolio ----*/
  section#portfolio.index-2 {
      background:url('../../img/parallax_5.jpg') 50% 0 no-repeat fixed;
      margin: 0 auto;
@@ -2500,7 +2500,7 @@
      border-width: 11px;
      margin-top: -11px;
 }
-/*---- Portfolio ----*/
+/*---- portfolio ----*/
  section#portfolio.index-3 {
      background:url('../../img/parallax_6.jpg') 50% 0 no-repeat fixed;
      margin: 0 auto;
@@ -3306,7 +3306,7 @@
      color:#797979;
 }
 /****---- Services 3 End ----****/
-/****---- Portfolio Detail 1 Start ----****/
+/****---- portfolio Detail 1 Start ----****/
  section#portfolio_detail .img-sec{
      height:540px;
      overflow-y:hidden;
@@ -3349,7 +3349,7 @@
  section#portfolio_detail .project_description p:last-child{
      padding-bottom:0px;
 }
-/****---- Portfolio Detail 1 End ----****/
+/****---- portfolio Detail 1 End ----****/
 /****---- Our Team 1 Start ----****/
  section#our_team.inner {
      padding: 0px;

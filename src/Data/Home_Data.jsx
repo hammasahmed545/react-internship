@@ -8,21 +8,28 @@ import team_img4 from '../img/team-member-pic3.jpg'
 import about_img from '../img/about_us_2.jpg'
 import about_img1 from '../img/client_dp1.jpg'
 /////// PORTFOLIO SECTION IMAGES ///////
-import a from "../img/portfolio/thumbnail/project_1.jpg"
-import b from "../img/portfolio/thumbnail/project_2.jpg"
-import c from "../img/portfolio/thumbnail/project_3.jpg"
-import d from "../img/portfolio/thumbnail/project_4.jpg"
-import e from "../img/portfolio/thumbnail/project_5.jpg"
-import f from "../img/portfolio/thumbnail/project_6.jpg"
+import portfolio_a from "../img/portfolio/thumbnail/project_1.jpg"
+import portfolio_b from "../img/portfolio/thumbnail/project_2.jpg"
+import portfolio_c from "../img/portfolio/thumbnail/project_3.jpg"
+import portfolio_d from "../img/portfolio/thumbnail/project_4.jpg"
+import portfolio_e from "../img/portfolio/thumbnail/project_5.jpg"
+import portfolio_f from "../img/portfolio/thumbnail/project_6.jpg"
 
-import A from "../img/portfolio/large/project_1.jpg"
-import B from "../img/portfolio/large/project_2.jpg"
-import C from "../img/portfolio/large/project_3.jpg"
-import D from "../img/portfolio/large/project_4.jpg"
-import E from "../img/portfolio/large/project_5.jpg"
-import F from "../img/portfolio/large/project_6.jpg"
+import portfolio_A from "../img/portfolio/large/project_1.jpg"
+import portfolio_B from "../img/portfolio/large/project_2.jpg"
+import portfolio_C from "../img/portfolio/large/project_3.jpg"
+import portfolio_D from "../img/portfolio/large/project_4.jpg"
+import portfolio_E from "../img/portfolio/large/project_5.jpg"
+import portfolio_F from "../img/portfolio/large/project_6.jpg"
 
 /////// OURTEAM SECTION DETAILS ///////
+import ourclient_a from "../img/client-1.jpg"
+import ourclient_b from "../img/client-1.jpg"
+import ourclient_c from "../img/client-1.jpg"
+import ourclient_d from "../img/client-1.jpg"
+import ourclient_e from "../img/client-1.jpg"
+import ourclient_f from "../img/client-1.jpg"
+
 const Sdata = [
     {
         pic: team_img1,
@@ -52,19 +59,27 @@ const Sdata = [
 /////// HEADER AND SECTION HEADINGS ///////
 const Heading_data = [
     {
-        title1:"Our ",
-        title2:"Team",
-        headingcontent:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-    },
-    {
         title1:"About ",
         title2:"Us",
         headingcontent:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
-        title1:"Portfolio ",
+        title1:"Our ",
+        title2:"Team",
+        headingcontent:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+        title1:"portfolio ",
         headingcontent:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 
+    },
+    {
+        title1:"What ",
+        title2:"people say",
+        headingcontent:"Lorem Ipsum has ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+        title1:"Our Client",
     }
 ]
 /////// ABOUTUS SECTION DETAILS ///////
@@ -90,7 +105,6 @@ const Testimonail_data = [
         position:"Designer" ,
         content:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
     },
-
     {
         pic:about_img1,
         name: "Rebecca Stormville" ,
@@ -121,34 +135,55 @@ const Testimonail_data = [
 const Portfolio_data = [
     {
         content: "Photographary",
-        img_thumbnail:a,
-        img_large:A
+        img_thumbnail:portfolio_a,
+        img_large:portfolio_A
     },
     {
         content: "Ecommerce",
-        img_thumbnail:b,
-        img_large:B
+        img_thumbnail:portfolio_b,
+        img_large:portfolio_B
     },
     {
         content: "Education",
-        img_thumbnail:c,
-        img_large:C
+        img_thumbnail:portfolio_c,
+        img_large:portfolio_C
     },
     {
         content: "Real Estate",
-        img_thumbnail:d,
-        img_large:D
+        img_thumbnail:portfolio_d,
+        img_large:portfolio_D
     },
     {
         content: "Bar & Restaurant",
-        img_thumbnail:e,
-        img_large:E
+        img_thumbnail:portfolio_e,
+        img_large:portfolio_E
     },
     {
         content: "Saloon & Spa",
-        img_thumbnail:f,
-        img_large:F
+        img_thumbnail:portfolio_f,
+        img_large:portfolio_F
+    },
+]
+/////// OurClient Section Data ///////
+const OurClient = [
+    {
+        pic:ourclient_a
+    },
+    {
+        pic:ourclient_b
+    },
+    {
+        pic:ourclient_c
+    },
+    {
+        pic:ourclient_d
+    },
+    {
+        pic:ourclient_e
+    },
+    {
+        pic:ourclient_f
     },
 ]
 
-export {Sdata, Heading_data, About_data, Testimonail_data, Portfolio_data}
+export {Sdata, Heading_data, About_data, Testimonail_data, Portfolio_data,OurClient}
