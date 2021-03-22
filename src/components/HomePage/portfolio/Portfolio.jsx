@@ -1,6 +1,6 @@
 import React from 'react';
-import Sectionheader from "../reusable/Sectionheader";
-import {Heading_data,Portfolio_data} from "../../Data/Home_Data";
+import Sectionheader from "../../reusable/Sectionheader";
+import {Heading_data,Portfolio_data} from "../../../Data/Home_Data";
 import PorfolioDetail from "./PorfolioDetail";
 
 

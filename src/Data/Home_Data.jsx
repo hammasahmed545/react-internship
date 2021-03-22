@@ -59,27 +59,32 @@ const Sdata = [
 /////// HEADER AND SECTION HEADINGS ///////
 const Heading_data = [
     {
-        title1:"About ",
+        title1:"About",
         title2:"Us",
         headingcontent:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
-        title1:"Our ",
+        title1:"Our",
         title2:"Team",
         headingcontent:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
-        title1:"portfolio ",
+        title1:"portfolio",
         headingcontent:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 
     },
     {
-        title1:"What ",
+        title1:"What",
         title2:"people say",
         headingcontent:"Lorem Ipsum has ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
         title1:"Our Client",
+    },
+    {
+        title1: "Our",
+        title2: "Pricing",
+        headingcontent:"Lorem Ipsum has ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     }
 ]
 /////// ABOUTUS SECTION DETAILS ///////
@@ -185,5 +190,40 @@ const OurClient = [
         pic:ourclient_f
     },
 ]
+/////// OurPricing Section Data ///////
+const Pdata = [
+    {
+        heading : "Personal",
+        price : "$9"
+    },
+    {
+        heading : "Ultimate",
+        price : "$199"
+    },
+    {
+        heading : "Business",
+        price : "$99"
+    }
 
-export {Sdata, Heading_data, About_data, Testimonail_data, Portfolio_data,OurClient}
+]
+/////// OurPricing Section Data ///////
+const C_data = [
+    {
+        count:"95",
+        c_title:"Web Design",
+    },
+    {
+        count:"80",
+        c_title:"Web Development",
+    },
+    {
+        count:"70",
+        c_title:"web Hosting"
+    },
+    {
+        count:"75",
+        c_title:"Digital Marketing",
+    },
+]
+
+export {Sdata, Heading_data, About_data, Testimonail_data, Portfolio_data, OurClient, Pdata, C_data}

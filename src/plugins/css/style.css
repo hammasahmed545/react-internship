@@ -21,7 +21,7 @@
         2.02. Revolution Slider
         2.03. About Us
         2.04. Counter
-        2.05. Services
+        2.05. ServiceSection
         2.06. Our Team
         2.07. portfolio
         2.08. Clients
@@ -32,7 +32,7 @@
         03.1 Header
         03.2 Slider
         03.3 About Us
-        03.4 Services
+        03.4 ServiceSection
         03.5 Counter
         03.5 Our Team
         03.6 portfolio
@@ -47,7 +47,7 @@
         04.1 Slider
         04.2 Qualities
         04.3 About Us
-        04.4 Services
+        04.4 ServiceSection
         04.5 Team
         04.6 portfolio
         04.7 Counter
@@ -59,9 +59,9 @@
      5. About Us 1
      6. About Us 2
      7. About Us 3
-     8. Services 1
-     9. Services 2
-     10. Services 3
+     8. ServiceSection 1
+     9. ServiceSection 2
+     10. ServiceSection 3
      11. portfolio Detail
      12. Our Team
      13. Our Team 1 Detail
@@ -712,7 +712,7 @@
      display:block;
      color: #fff;
 }
-/*---- Services ----*/
+/*---- ServiceSection ----*/
  .service-card {
      border:solid 1px #e6e6e6;
      background:#fff;
@@ -1347,7 +1347,7 @@
  section#about-us.index-2 .qualities .column .description p{
      padding-bottom: 0 
 }
-/*---- Services ----*/
+/*---- ServiceSection ----*/
  section#services.index-2 {
      padding:100px 0;
 }
@@ -2323,7 +2323,7 @@
      margin-top: 20px;
      padding-left: 0 
 }
-/*---- Services ----*/
+/*---- ServiceSection ----*/
  section#services.index-3 {
      background:url('../../img/parallax_3.jpg') 50% 0 no-repeat fixed;
      margin: 0 auto;
@@ -3086,7 +3086,7 @@
      border-right:none;
 }
 /****---- About Us 3 End ----****/
-/****---- Services 1 Start ----****/
+/****---- ServiceSection 1 Start ----****/
  section#services-counter{
      position: relative;
      overflow:hidden;
@@ -3211,7 +3211,7 @@
      height:auto;
      padding:70px 0px;
 }
-/****---- Services 1 End ----****/
+/****---- ServiceSection 1 End ----****/
  section#work-status.index-3 {
      background:url('../../img/parallax_3.jpg') 50% 0 no-repeat fixed;
      margin: 0 auto;
@@ -3224,7 +3224,7 @@
      z-index:2;
      position: relative;
 }
-/****---- Services 2 Start ----****/
+/****---- ServiceSection 2 Start ----****/
  section#services.index-2 {
      padding-bottom:50px;
 }
@@ -3260,8 +3260,8 @@
  section#services.index-2 .service-card:hover .service_icon{
      border:none !important;
 }
-/****---- Services 2 End ----****/
-/****---- Services 3 Start ----****/
+/****---- ServiceSection 2 End ----****/
+/****---- ServiceSection 3 Start ----****/
  section#services.index-3.inner{
      background:none;
      padding-bottom:50px;
@@ -3305,7 +3305,7 @@
  section#services.index-3 .service-card .service_icon i::before{
      color:#797979;
 }
-/****---- Services 3 End ----****/
+/****---- ServiceSection 3 End ----****/
 /****---- portfolio Detail 1 Start ----****/
  section#portfolio_detail .img-sec{
      height:540px;

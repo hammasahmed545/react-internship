@@ -1,7 +1,7 @@
 import React from "react";
 
-import {Heading_data,OurClient} from "../../Data/Home_Data";
-import Sectionheader from "../reusable/Sectionheader";
+import {Heading_data,OurClient} from "../../../Data/Home_Data";
+import Sectionheader from "../../reusable/Sectionheader";
 
 const OurClientSection=()=>{
     return(
