@@ -1,14 +1,11 @@
 import './App.css';
 import React from 'react';
 
-import Home from "./Pages/Home";
-import Service from "./Pages/Service";
-import TeamPage from "./Pages/TeamPage";
-
+import Home from "./Pages/JobStockPages/Home";
 function App() {
     return (
         <div>
-            <TeamPage/>
+            <Home/>
         </div>
     );
 }
