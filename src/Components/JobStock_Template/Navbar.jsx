@@ -1,5 +1,6 @@
 import React from "react";
 
+import A from "../../Images/Job_Stock_Images/img/logo-white.png"
 
 const Navbar = () => {
     return (
@@ -10,26 +11,32 @@ const Navbar = () => {
                 </button>
                 <div className="navbar-header">
                     <a className="navbar-brand" href="index-2.html">
-                        <img src="assets/img/logo-white.png" className="logo logo-display" alt=""/>
-                        <img src="assets/img/logo-white.png" className="logo logo-scrolled" alt=""/>
+                        <img src={A} className="logo logo-display" alt=""/>
+                        <img src={A} className="logo logo-scrolled" alt=""/>
                         </a>
                     </div>
                 <div className="collapse navbar-collapse" id="navbar-menu">
                     <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li><a href="login.html"><i className="fa fa-pencil" aria-hidden="true"></i>SignUp</a></li>
-                        <li><a href="pricing.html"><i className="fa fa-sign-in" aria-hidden="true"></i>Pricing</a></li>
-                        <li className="left-br"><a href="javascript:void(0)" data-toggle="modal" data-target="#signup"
-                                                   className="signin">Sign In Now</a></li>
+                        <li>
+                            <a href="login.html"> <i className="fa fa-pencil" aria-hidden="true"> </i>SignUp</a>
+                        </li>
+                        <li>
+                            <a href="pricing.html"> <i className="fa fa-sign-in" aria-hidden="true"> </i>Pricing</a>
+                        </li>
+                        <li className="left-br">
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#signup" className="signin">Sign In Now</a>
+                        </li>
                     </ul>
+
                     <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                         <li className="dropdown megamenu-fw">
                             <a href="#" className="dropdown-toggle" data-toggle="dropdown">Brows</a>
                             <ul className="dropdown-menu megamenu-content" role="menu">
                                 <li>
                                     <div className="row">
+
                                         <div className="col-menu col-md-3">
                                             <h6 className="title">Main Pages</h6>
-
                                             <div className="content">
                                                 <ul className="menu-col">
                                                     <li><a href="index-2.html">Home Page 1</a></li>
@@ -45,9 +52,9 @@ const Navbar = () => {
                                                 </ul>
                                             </div>
                                         </div>
+
                                         <div className="col-menu col-md-3">
                                             <h6 className="title">For Candidate</h6>
-
                                             <div className="content">
                                                 <ul className="menu-col">
                                                     <li><a href="browse-jobs.html">Browse Jobs</a></li>
@@ -63,9 +70,9 @@ const Navbar = () => {
                                                 </ul>
                                             </div>
                                         </div>
+
                                         <div className="col-menu col-md-3">
                                             <h6 className="title">For Employer</h6>
-
                                             <div className="content">
                                                 <ul className="menu-col">
                                                     <li><a href="create-job.html">Create Job</a></li>
@@ -81,9 +88,9 @@ const Navbar = () => {
                                                 </ul>
                                             </div>
                                         </div>
+
                                         <div className="col-menu col-md-3">
                                             <h6 className="title">Extra Pages <span className="new-offer">New</span></h6>
-
                                             <div className="content">
                                                 <ul className="menu-col">
                                                     <li><a href="freelancer-detail.html">Freelancer detail</a></li>
@@ -94,8 +101,7 @@ const Navbar = () => {
                                                     <li><a href="freelancers.html">Freelancers</a></li>
                                                     <li><a href="freelancers-2.html">Freelancers 2</a></li>
                                                     <li><a href="premium-candidate.html">Premium Candidate</a></li>
-                                                    <li><a href="premium-candidate-detail.html">Premium Candidate Detail</a>
-                                                    </li>
+                                                    <li><a href="premium-candidate-detail.html">Premium Candidate Detail</a></li>
                                                     <li><a href="blog-detail.html">Blog detail</a></li>
                                                 </ul>
                                             </div>
