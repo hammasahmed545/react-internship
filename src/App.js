@@ -1,11 +1,14 @@
 import './App.css';
 import React from 'react';
 
-import Home from "./Pages/JobStockPages/Home";
+import Home from "./Pages/BizlerPages/Home";
+import Service from "./Pages/BizlerPages/Service";
+import TeamPage from "./Pages/BizlerPages/TeamPage";
+import Career_Detail from "./Pages/BizlerPages/Career_Detail";
 function App() {
     return (
         <div>
-            <Home/>
+            <Career_Detail/>
         </div>
     );
 }
